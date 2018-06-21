@@ -25,7 +25,7 @@ SECRET_KEY = '9*^xoe5-#s52243an_9kd&2-@)n@7!3onegt92ikmz#6@0=ocm'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -118,3 +118,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+import django_heroku
+django_heroku.settings(locals())

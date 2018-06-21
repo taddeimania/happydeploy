@@ -22,3 +22,17 @@
  - add stuff to .gitignore
  - make initial commit
  - send code to github
+4.1 Send code to github
+ - create github repository
+ - wire up local dir to remote repo
+ - git push
+5. Deploy to Heroku
+ - heroku create
+ - confirm w/ `git remote -v` - you should see origin & heroku
+ - configure app to work in heroku
+  - Add "\*" to ALLOWED_HOSTS (settings.py)
+  - configure django_heroku
+ - Add Procfile
+  - Add web worker: `web: gunicorn happydeploy.wsgi`
+ - Test app works locally
+  - `heroku local web`
