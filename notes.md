@@ -83,3 +83,11 @@
 15. Add timestamp model to app
  - makemigrations and migrate locally
 16. Heroku deploy (git add everything, commit, push)
+17. Migrate new model on heroku
+18. Create List and Create API View for Timestamp Model
+ - create serializer for Timestamp model (serializers.py)
+ - add queryset and serializer_class to API View
+19. Add a path for timestamp api view
+ - `path('timestamps/', TimestampListCreateAPIView.as_view())`
+20. (Double check for any typos or import errors)
+21. Test locally that you can GET to `/timestamps/` and POST to create a `/timestamps/`
