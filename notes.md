@@ -77,3 +77,9 @@
   ```
   - Now it should work.
 14. Commit all changes and push to heroku
+ - create superuser in Heroku
+  - `heroku run python manage.py createsuperuser`
+ - Test auth token create and destroy same as above - but with heroku host as URL
+15. Add timestamp model to app
+ - makemigrations and migrate locally
+16. Heroku deploy (git add everything, commit, push)
