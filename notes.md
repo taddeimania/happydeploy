@@ -48,3 +48,12 @@
 8. Wire up my view to the `/` route in `urls.py`
  - Test the route works in browser
  - When it doesn't work, make sure you've added your `app` to `INSTALLED_APPS`
+9. Deploy to Heroku
+ - git commit
+10. Create custom User model in our `app/models.py`
+ - `https://docs.djangoproject.com/en/2.0/topics/auth/customizing/#substituting-a-custom-user-model`
+ - add `AUTH_USER_MODEL` attribute to `settings.py`
+11. Add rest_framework and rest_framework.authtoken to `INSTALLED_APPS`
+12. makemigrations & migrate
+ - locally - `python manage.py migrate`
+ - on heroku (git push all migrations)
